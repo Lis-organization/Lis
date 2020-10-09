@@ -1,0 +1,60 @@
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+
+body {
+	background: #F56F52;
+	color: white;
+}
+
+#location-text-input {
+	display: block;
+	border: none;
+	background: white;
+	border-radius: 10px;
+	padding: 20px;
+	color: grey;
+	outline: none;
+	width: 70%;
+	font-size: 30 px;
+	float: left;
+	margin-left: 30px;
+	margin-right: 30px;
+	vertical-align: 20px;
+	margin-top: 880px;
+}
+
+.btn-send {
+	background-color: DodgerBlue;
+	border: none;
+	color: white;
+	padding: 12px 16px;
+	font-size: 16px;
+	cursor: : pointer;
+	border-radius: 20%;
+	float: right;
+	margin-right: 20px;
+	margin-top: 880px;
+}
+
+.btn-send:hover {
+	background-color: RoyalBlue;
+}
+
+.btn-mic {
+	background-color: DodgerBlue;
+	border: none;
+	color: white;
+	padding: 12px 16px;
+	font-size: 16px;
+	cursor: : pointer;
+	border-radius: 20%;
+	float: left;
+	margin-left: 20px;
+	margin-top: 880px;
+}
+
+.btn-mic {
+	background-color: RoyalBlue;
+}
