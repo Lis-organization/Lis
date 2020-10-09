@@ -4,14 +4,14 @@
 
 
 body {
-	background: #F56F52;
+	background: #FFFFFF;
 	color: white;
 }
 
 #location-text-input {
 	display: block;
 	border: none;
-	background: white;
+	background: #F5EDC3;
 	border-radius: 10px;
 	padding: 20px;
 	color: grey;
@@ -26,35 +26,35 @@ body {
 }
 
 .btn-send {
-	background-color: DodgerBlue;
+	background-color: orange;
 	border: none;
 	color: white;
 	padding: 12px 16px;
 	font-size: 16px;
-	cursor: : pointer;
 	border-radius: 20%;
 	float: right;
 	margin-right: 20px;
 	margin-top: 880px;
+	cursor: pointer;
 }
 
 .btn-send:hover {
-	background-color: RoyalBlue;
+	background-color: #978318;
 }
 
 .btn-mic {
-	background-color: DodgerBlue;
+	background-color: orange;
 	border: none;
 	color: white;
 	padding: 12px 16px;
 	font-size: 16px;
-	cursor: : pointer;
 	border-radius: 20%;
 	float: left;
 	margin-left: 20px;
 	margin-top: 880px;
+	cursor: pointer;
 }
 
-.btn-mic {
-	background-color: RoyalBlue;
+.btn-mic:hover {
+	background-color: #978318;
 }
