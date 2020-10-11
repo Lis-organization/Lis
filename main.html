@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Lis</title>
 
-	<script src="eel.js"></script>
 	<script src="src/recognizer_text.js"></script>
+	<script src="src/http_requests.js"></script>
 	<link rel="icon" type="image/png" href="favicon.png">
 
 	<link rel="stylesheet" href="main.css">
@@ -28,6 +28,7 @@
 
 		function showText(text) {
 			txtMessage.value = recognizer.transcript;
+			console.log(httpGet("http://localhost:4567/lis/text=" + txtMessage.value));
 		}
 
 		function start() {
