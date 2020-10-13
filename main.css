@@ -23,6 +23,7 @@ body {
 	margin-right: 30px;
 	vertical-align: 20px;
 	margin-top: 880px;
+	box-shadow: 5px 5px 5px grey;
 }
 
 .btn-send {
@@ -36,6 +37,7 @@ body {
 	margin-right: 20px;
 	margin-top: 880px;
 	cursor: pointer;
+	box-shadow: 5px 5px 5px grey;
 }
 
 .btn-send:hover {
@@ -53,6 +55,7 @@ body {
 	margin-left: 20px;
 	margin-top: 880px;
 	cursor: pointer;
+	box-shadow: 5px 5px 5px grey;
 }
 
 .btn-mic:hover {
