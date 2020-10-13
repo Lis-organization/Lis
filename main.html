@@ -7,6 +7,7 @@
 	<script src="src/recognizer_text.js"></script>
 	<script src="src/http_requests.js"></script>
 	<script src="src/speaker_text.js"></script>
+	<script src="src/update_list_messages.js"></script>
 	<link rel="icon" type="image/png" href="favicon.png">
 
 	<link rel="stylesheet" href="main.css">
@@ -14,11 +15,20 @@
 </head>
 <body>
 
-	<button class="btn-mic"><i class="material-icons">keyboard_voice</i></button>
+	<div>
+		<ul id="messagesList">
+			
+		</ul>
+	</div>
 
-	<input id="location-text-input" type="text" placeholder="Введите текст..." required="">
+	<div>
+		<button class="btn-mic"><i class="material-icons">keyboard_voice</i></button>
 
-	<button class="btn-send"><i class="material-icons">keyboard_arrow_right</i></button>
+		<input id="location-text-input" type="text" placeholder="Введите текст..." required="">
+
+		<button class="btn-send"><i class="material-icons">keyboard_arrow_right</i></button>
+	</div>
+
 
 	<script type="text/javascript">
 		
@@ -29,7 +39,10 @@
 
 		function showText(text) {
 			txtMessage.value = recognizer.transcript;
-			speak(httpGet("http://localhost:4567/lis/text=" + txtMessage.value));
+			newElement(recognizer.transcript);
+			var output = httpGet("http://localhost:4567/lis/text=" + txtMessage.value);
+			newElement(output);
+			speak(output);
 		}
 
 		function start() {
@@ -48,6 +61,9 @@
 				stop();
 			}
 		});
+
+		var list = document.querySelector('ul');
+
 	</script>
 </body>
 </html>

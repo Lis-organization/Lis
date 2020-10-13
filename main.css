@@ -1,11 +1,15 @@
 * {
 	font-family: "Roboto", sans-serif;
+	margin: 0;
 }
 
 
 body {
 	background: #FFFFFF;
 	color: white;
+	height: 100%;
+	width: 100%;
+	resize: none;
 }
 
 #location-text-input {
@@ -16,14 +20,13 @@ body {
 	padding: 20px;
 	color: grey;
 	outline: none;
-	width: 70%;
+	width: 80%;
 	font-size: 30 px;
-	float: left;
-	margin-left: 30px;
-	margin-right: 30px;
-	vertical-align: 20px;
-	margin-top: 880px;
+	margin-left: 10%;
+
 	box-shadow: 5px 5px 5px grey;
+	position: absolute;
+	bottom: 0;
 }
 
 .btn-send {
@@ -35,9 +38,11 @@ body {
 	border-radius: 20%;
 	float: right;
 	margin-right: 20px;
-	margin-top: 880px;
 	cursor: pointer;
 	box-shadow: 5px 5px 5px grey;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 .btn-send:hover {
@@ -53,11 +58,60 @@ body {
 	border-radius: 20%;
 	float: left;
 	margin-left: 20px;
-	margin-top: 880px;
 	cursor: pointer;
 	box-shadow: 5px 5px 5px grey;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
 
 .btn-mic:hover {
 	background-color: #978318;
+}
+
+
+ul {
+	margin: 0;
+	padding: 0;
+	height: 200px;
+	resize: none;
+}
+
+ul li {
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #F7F76B;
+  font-size: 18px;
+  transition: 0.2s;
+  color: black;
+  border-radius: 10px;
+  border: 3px solid #CBCB6C;
+  box-shadow: 3px 3px 3px grey;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 0px;
+  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+ul li:nth-child(odd) {
+  background: #2293DC;
+  border: 3px solid #2670C4;
+  margin-left: 0px;
+  margin-right: 50px;
+}
+
+ul li.checked::before {
+	content: '';
+	position: absolute;
+	border-color: #ACACA6;
+	border-style: solid;
+	top: 10px;
+	height: 15px;
+	width: 7px;
 }
