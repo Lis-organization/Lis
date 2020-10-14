@@ -12,6 +12,11 @@ body {
 	resize: none;
 }
 
+#messages {
+	overflow: auto;
+	height: 800px;
+}
+
 #location-text-input {
 	display: block;
 	border: none;
