@@ -120,3 +120,18 @@ ul li.checked::before {
 	height: 15px;
 	width: 7px;
 }
+
+
+@keyframes move {
+	from {
+		top: 100px;
+	}
+
+	to {
+		top: 0px;
+	}
+}
+
+ul li {
+	animation: move 2s linear;
+}
